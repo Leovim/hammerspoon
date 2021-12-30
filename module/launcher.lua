@@ -8,20 +8,21 @@ local fnutils = require "hs.fnutils"
 grid.setMargins({0, 0})
 
 applist = {
-    {shortcut = '1',appname = 'OmniFocus'},
-    {shortcut = '2',appname = 'Google Chrome'},
-    {shortcut = '3',appname = 'DingTalk'},
-    {shortcut = '4',appname = 'Maipo'},
-    {shortcut = '5',appname = 'Pycharm CE'},
-    {shortcut = '6',appname = 'IntelliJ IDEA CE'},
-    {shortcut = '7',appname = 'Logseq'},
-    {shortcut = 'T',appname = 'iTerm'},
+    {mods={'ctrl', 'cmd'}, shortcut = '1',appname = 'OmniFocus'},
+    {mods={'ctrl', 'cmd'}, shortcut = '2',appname = 'Google Chrome'},
+    {mods={'ctrl', 'cmd'}, shortcut = '3',appname = 'DingTalk'},
+    {mods={'ctrl', 'cmd'}, shortcut = '4',appname = 'Maipo'},
+    {mods={'ctrl', 'cmd'}, shortcut = '5',appname = 'Pycharm CE'},
+    {mods={'ctrl', 'cmd'}, shortcut = '6',appname = 'IntelliJ IDEA CE'},
+    {mods={'ctrl', 'cmd'}, shortcut = '7',appname = 'Logseq'},
+    {mods={'ctrl', 'cmd'}, shortcut = 'T',appname = 'iTerm'},
+    {mods={'ctrl'}, shortcut = '\\',appname = 'Bitwarden'},
 }
 
 fnutils.each(applist, function(entry)
-    hotkey.bind({'ctrl', 'cmd'}, entry.shortcut, entry.appname, function()
-        application.launchOrFocus(entry.appname)
-        -- toggle_application(applist[i].appname)
+    hotkey.bind(entry.mods, entry.shortcut, entry.appname, function()
+        -- application.launchOrFocus(entry.appname)
+        toggle_application(entry.appname)
     end)
 end)
 
