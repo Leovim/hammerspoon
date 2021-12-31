@@ -4,4 +4,5 @@ package.path = hs.configdir .. '/?.lua;' .. hs.configdir .. '/?/init.lua;' .. hs
 require "module/reload"
 require "module/launcher"
 require "module/config"
+require "module/inputmethod"
 require "module/other"
