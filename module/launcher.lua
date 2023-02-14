@@ -10,12 +10,14 @@ grid.setMargins({0, 0})
 applist = {
     {mods={'ctrl', 'cmd'}, shortcut = '1',appname = 'OmniFocus'},
     {mods={'ctrl', 'cmd'}, shortcut = '2',appname = 'Google Chrome'},
-    {mods={'ctrl', 'cmd'}, shortcut = '3',appname = 'DingTalk'},
+    {mods={'ctrl', 'cmd'}, shortcut = '3',appname = 'iDingTalk'},
     {mods={'ctrl', 'cmd'}, shortcut = '4',appname = 'Maipo'},
     {mods={'ctrl', 'cmd'}, shortcut = '5',appname = 'Pycharm CE'},
     {mods={'ctrl', 'cmd'}, shortcut = '6',appname = 'IntelliJ IDEA CE'},
     {mods={'ctrl', 'cmd'}, shortcut = '7',appname = 'Logseq'},
     {mods={'ctrl', 'cmd'}, shortcut = 'T',appname = 'iTerm'},
+    {mods={'ctrl', 'cmd'}, shortcut = 'V',appname = 'Visual Studio Code'},
+    {mods={'ctrl', 'cmd'}, shortcut = 'G',appname = 'goneovim'},
     {mods={'ctrl'}, shortcut = '\\',appname = 'Bitwarden'},
 }
 

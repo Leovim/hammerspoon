@@ -51,7 +51,7 @@ hsaria2_secret = "token"
 -- Those keybindings below could be disabled by setting to {"", ""} or {{}, ""}
 
 -- Window hints keybinding: Focuse to any window you want
-hswhints_keys = {"cmd", "escape"}
+hswhints_keys = {"cmd", "F12"}
 
 -- appM environment keybinding: Application Launcher
 hsappM_keys = {"alt", "Q"}

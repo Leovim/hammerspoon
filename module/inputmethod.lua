@@ -15,6 +15,7 @@ local app2Ime = {
     {'/Applications/IntelliJ IDEA CE.app', 'English'},
     {'/Applications/PyCharm CE.app', 'English'},
     {'/Applications/Visual Studio Code.app', 'English'},
+    {'/Applications/goneovim.app', 'English'},
     {'/Applications/OmniFocus.app', 'Chinese'},
     {'/Applications/DingTalk.app', 'Chinese'},
     {'/Applications/Logseq.app', 'Chinese'},
@@ -22,7 +23,7 @@ local app2Ime = {
 }
 
 function updateFocusAppInputMethod()
-    local ime = 'English'
+    local ime = 'Chinese'
     local focusAppPath = hs.window.frontmostWindow():application():path()
     for index, app in pairs(app2Ime) do
         local appPath = app[1]
@@ -34,10 +35,10 @@ function updateFocusAppInputMethod()
         end
     end
 
-    if ime == 'English' then
-        English()
-    else
+    if ime == 'Chinese' then
         Chinese()
+    else
+        English()
     end
 end
 
