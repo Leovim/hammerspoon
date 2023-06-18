@@ -16,6 +16,7 @@ local app2Ime = {
     {'/Applications/PyCharm CE.app', 'English'},
     {'/Applications/Visual Studio Code.app', 'English'},
     {'/Applications/goneovim.app', 'English'},
+    {'/Applications/Xcode.app', 'English'},
     {'/Applications/OmniFocus.app', 'Chinese'},
     {'/Applications/DingTalk.app', 'Chinese'},
     {'/Applications/Logseq.app', 'Chinese'},
